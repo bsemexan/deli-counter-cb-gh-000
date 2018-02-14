@@ -4,3 +4,6 @@ end
 
 def now_serving(katz_deli)
 end
+
+def line(katz_deli)
+end
