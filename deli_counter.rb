@@ -8,9 +8,10 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    aa << katz_deli.each_with_index.map {|rm, idx| "The line is currently: #{idx + 1}. #{rm}"}
+    whos_in_line = "The line is currently: "
+     << katz_deli.each_with_index {|rm, idx| whos_in_line << "#{idx + 1}. #{rm}"}
   end
-  puts aa
+  puts whos_in_line
 end
 
 def now_serving(katz_deli)
