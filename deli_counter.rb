@@ -4,8 +4,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     whos_in_line = "The line is currently:"
-    katz_deli.each_with_index |rm, idx| whos_in_line << " #{idx + 1}. #{rm}"}
-    
+    katz_deli.each_with_index {|rm, idx| whos_in_line << " #{idx + 1}. #{rm}"}
   end
   puts whos_in_line
 end
