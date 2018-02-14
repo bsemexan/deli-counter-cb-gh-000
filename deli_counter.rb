@@ -8,7 +8,7 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    katz_deli.each_with_index.map {|rm, idx| "Hello, #{rm}! You'll be assigned to room #{idx + 1}!"}
+    katz_deli.each_with_index.map {|rm, idx| "The line is currently: #{idx + 1}. #{rm}"}
   end
 end
 
