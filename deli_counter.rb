@@ -1,6 +1,6 @@
 # Write your code here.
 def take_a_number(katz_deli, customer)
-  katz_deli << customer
+  katz_deli.push(customer)
   puts "Welcome, #{customer}. You are number #{katz_deli.size} in line."
 end
 
